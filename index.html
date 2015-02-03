@@ -1,0 +1,275 @@
+<!DOCTYPE html/>
+<html>
+<head>
+<title>David Hannaford's Website</title>
+
+    <link href='css/fonts.css' rel='stylesheet' type='text/css' /><!--http://fonts.googleapis.com/css?family=Averia+Libre|Trocchi|Noto+Sans|Lato|Raleway+Dots|Raleway-->
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="scripts/JQuery_v1.11.1.js"></script><!-- http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js -->
+
+    <link rel="stylesheet" href="Owl/owl.carousel.css" />
+    <link rel="stylesheet" href="Owl/owl.theme.css" />
+    <link rel="stylesheet" href="Owl/owl.transition.css" />
+
+    <script src="Owl/owl.carousel.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+   
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="content">
+
+        <div class="header">
+           <div class="logo">
+
+               <div class="logoPhoto">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                       <circle r="54" cx="55" cy="55" />
+                       <clipPath id="clipCircle">
+                           <circle r="50" cx="55" cy="55" />
+                       </clipPath>
+                       <image x="5" y="5" width="100" height="100"
+                              xlink:href="images/DavePicEffect2.jpg" clip-path="url(#clipCircle)" />
+                   </svg>
+               </div>
+
+               <div class="logoText">
+                   <h1>David Hannaford Net</h1>
+                   <em>David Hannaford's CV, Portfolio and Info</em>
+               </div>
+            </div>
+        </div>
+
+        <div class="navBar">
+            <div class="ulListDiv">
+                <ul>
+                    <li id="Home" class="selected"><a class="navButton">Home</a></li>
+                    <li id="CV" class="unselected"><a class="navButton">CV</a></li>
+                    <li id="Portfolio" class="unselected"><a class="navButton">Portfolio</a></li>
+                    <li id="Contact" class="unselected"><a class="navButton">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mainPic">
+        </div>
+           
+        <br/>
+
+        <div class="section" >
+            <div class="subSection Home">
+                <br /><br />
+                I am a web developer with Over 3 years experience with a Distinction in MSc Computing, 
+                I am particularly interested in client side technologies HTML4/5, CSS & all things JS and usually 
+                work in MS Visual Studio and SQL Server. I am a UK citizen and a car owner with a full driving license.
+            </div>
+
+
+            <div class="subSection CV">
+             
+                Open CV in new window, use following link <a class="navButton" href="David Hannaford CV.pdf" target="_blank">David Hannaford CV.pdf</a>
+                <iframe id="iframe" src=""></iframe> 
+            </div>
+
+
+
+            
+            <div class="subSection Portfolio">
+                
+
+                <div id="owl-demo" class="owl-carousel owl-theme outerPane">
+
+                    <div class="item pane startPane">
+                        <h1>Zetica RASC DC</h1>
+                        <p>
+                            A client that specialised in surveying of Railway lines required a software control system to connect a number of different sensors (such as GPS, cameras and 3D radar). The software was primarily for the collection, organisation and management of the data related to the location along a particular length of track it was gathered, this data was then uploaded to global server.
+                            <br /><br />
+                            My involvement in this project was the implementation of the user interface for this system, which for the purposes of displaying on multiple screens was done using web technologies such as HTML, CSS and Javascript connecting to a server using Signal-R websockets. Although the higher level wireframes were not designed by me, I choose all the details of the Software design and choose to use Object oriented JS, Jquery UI and a custom theme, along with Kendo UI for the plotting of Charts.
+                        </p>
+
+                        <a class="fancybox-button" rel="fancybox-button" href="images/Zetica_RASC_DC_main.png" title="Screenshot of main dash board">
+                            <img class="thumbnail" src="images/Zetica_RASC_DC_main.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/Zetica_RASC_DC_start_menu.png" title="Main Menu">
+                            <img class="thumbnail" src="images/Zetica_RASC_DC_start_menu.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/Zetica_RASC_DC_prerun.png" title="Pre-run configuration">
+                            <img class="thumbnail" src="images/Zetica_RASC_DC_prerun.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/Zetica_RASC_DC_project.png" title="Project settings / configuration">
+                            <img class="thumbnail" src="images/Zetica_RASC_DC_project.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/Zetica_RASC_DC_installation.png" title="Installation settings / configuration">
+                            <img class="thumbnail" src="images/Zetica_RASC_DC_installation.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/Zetica_RASC_DC_download_error.png" title="Download progress, with 'Growl' error">
+                            <img class="thumbnail" src="images/Zetica_RASC_DC_download_error.png" alt="" />
+                        </a>
+
+                    </div>
+
+                    <div class="item pane">
+                        <h1>IMS Alumni Drupal Site</h1>
+                        <p>
+                            Another client in the Healthcare Industry wanted to created a website that would keep track of former employees and the sharing of exclusive content. It was decided that the website would be implemented using the Drupal Content Management System which would include such features as ability to make content and members searchable and for Administrators to easily upload and manage content to be displayed.
+                            <br /><br />
+                            My Involvement with the project was to implement the design using a Drupal style theme that was created using a third party designer, although eventually all modifications of styles where done by myself. I had to administer and develop the Drupal site, this was done using a number of custom modules as well as modifying Drupal templates which required an understanding of PHP and the Drupal API. The website was successfully deployed and the client later asked for a more sophisticated archiving system to be added based on the quality of the initial work.
+                        </p>
+
+                        <a class="fancybox-button" rel="fancybox-button" href="images/IMS_Drupal_Home.png" title="IMS Alumni home page - actual site at https://www.imsocietycg.com/">
+                            <img class="thumbnail" src="images/IMS_Drupal_Home.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/IMS_Drupal_page_1.png" title="Learning page - offers resources for site members">
+                            <img class="thumbnail" src="images/IMS_Drupal_page_1.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/IMS_Drupal_page_2.png" title="Leading page - links to user and leader profile articles">
+                            <img class="thumbnail" src="images/IMS_Drupal_page_2.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/IMS_Drupal_page_3.png" title="Alumni index by letter">
+                            <img class="thumbnail" src="images/IMS_Drupal_page_3.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/IMS_Drupal_page_4.png" title="Archive - allows selection of content type to browse">
+                            <img class="thumbnail" src="images/IMS_Drupal_page_4.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/IMS_Drupal_page_5.png" title="Alumni search">
+                            <img class="thumbnail" src="images/IMS_Drupal_page_5.png" alt="" />
+                        </a>
+
+                    </div>
+
+
+                    <div class="item pane">
+                        <h1>OCC Marketplace</h1>
+                        <p>
+                            A long running product that was produced by the Company for the searching of information related to the provision of social services for Local Authority clients. Technologies used included Microsoft technologies, C#,  MVC 3 and SQL stored procedures for data access, with a web interface using HTML, CSS and JS.
+                            <br /><br />
+                            My Involvement was diverse with improvements to the project included fixing the then defective WYSIWYG editor, implementation of Print and Responsive style sheets and modification of various Stored procedures and back end issues.
+                        </p>
+
+                        <a class="fancybox-button" rel="fancybox-button" href="images/OCC_Marketplace_main.png" title="Screenshot of main search screen">
+                            <img class="thumbnail" src="images/OCC_Marketplace_main.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/OCC_Marketplace_responsive.png" title="Responsive design implemented using media queries">
+                            <img class="thumbnail" src="images/OCC_Marketplace_responsive.png" alt="" />
+                        </a>
+
+                    </div>
+
+
+                    <div class="item pane">
+                        <h1>Cupid Telemedicine</h1>
+                        <p>
+                            An EU project for the creation of a telemedicine system for Parkinson sufferers the idea being that users would perform therapeutic exercises with instructions uploaded specified by Clinicians. Users would have Bluetooth sensors attached to them that feedback from the exercises which can be provided to the clinicians and hence progress can be tracked. OCC was one of the many parties involved in the project involved with the management and collection of data using a C# MVC 4 on the back end with Web front end.
+                            <br /><br />
+                            My involvement was in the extension of the system initially implmented by a colegue to integrate new features.
+                        </p>
+
+                        <a class="fancybox-button" rel="fancybox-button" href="images/Cupid_main.png" title="Cupid clinician patient management screen">
+                            <img class="thumbnail" src="images/Cupid_main.png" alt="" />
+                        </a>
+
+                    </div>
+
+                    <div class="item pane">
+                        <h1>Lab Health and Safety Tracking System</h1>
+                        <p>
+                            Cardiff University Engineering Department needed to keep track of whether various Laboratories in the Engineering department were properly audited, the lab technician responsible for the audits and when these audits where to be carried out. This involved integrating with the current system and database that was implemented in ASP Classic and SQL Server DBs.
+                            <br /><br />
+                            I implemented the system using web based technologies in conjunction with the academics in charge of the overseeing off the system, improvements were made in an incremental manner.
+                        </p>
+
+                        <a class="fancybox-button" rel="fancybox-button" href="images/H&S_Lab_Audit_main.png" title="Health and Safety lab audit system main admin screen showing registered users">
+                            <img class="thumbnail" src="images/H&S_Lab_Audit_main.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/H&S_Lab_Audit_outstanding_rooms.png" title="Main screen drop down showing rooms with outstanding reports">
+                            <img class="thumbnail" src="images/H&S_Lab_Audit_outstanding_rooms.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/H&S_Lab_Audit_outstanding_reports.png" title="Outstanding reports filed for the room previously selected">
+                            <img class="thumbnail" src="images/H&S_Lab_Audit_outstanding_reports.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/H&S_Lab_Audit_report_actions.png" title="Each report consists of a number of actions that are set by a manager">
+                            <img class="thumbnail" src="images/H&S_Lab_Audit_report_actions.png" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/H&S_Lab_Audit_actions_complete.png" title="Once set actions are implemented and updated by a lab technition">
+                            <img class="thumbnail" src="images/H&S_Lab_Audit_actions_complete.png" alt="" />
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="item pane">
+                        <h1>MSc Dissertation 'Visual Forums'</h1>
+                        <p>
+                            My novel idea for an on-line forum that took inspiration from mind mapping software, each comment by a user is a speech bubble with replies to the comment linked by arrows. It is possible to expand/minimise the to each comment which is more clearly displayed than a traditional forum where the screen can become cluttered to show this same thing. My Supervisor liked the idea and thought that it would be a good addition to his Social Science cross disciplinary research group and on the strength of my work I was offered an RA position.
+                            <br /><br />
+                            The application used JS and AJAX to update from a server running PHP and MySQL database. The application allowed the user to log in with Facebook so I had some exposure to the Facebook Javascript and PHP API.
+                        </p>
+
+                        <a class="fancybox-button" rel="fancybox-button" href="images/VisualForums_home.PNG" title="Visual Forums - Home Page">
+                            <img class="thumbnail" src="images/VisualForums_home.PNG" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/VisualForums_1.PNG" title="First comment for a forum thread is shown, post response using edit button">
+                            <img class="thumbnail" src="images/VisualForums_1.PNG" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/VisualForums_2.PNG" title="Select 'Replies' button to expand replies from a particular comment, done using JS AJAX">
+                            <img class="thumbnail" src="images/VisualForums_2.PNG" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/VisualForums_3.PNG" title="Replies of replies can be selected... and so on.">
+                            <img class="thumbnail" src="images/VisualForums_3.PNG" alt="" />
+                        </a>
+                        <a class="fancybox-button" rel="fancybox-button" href="images/VisualForums_4.PNG" title="Will hide replies other comment in previous column selected">
+                            <img class="thumbnail" src="images/VisualForums_4.PNG" alt="" />
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            
+            
+            <div class="subSection Contact">
+                <br />
+                <ul>
+                    <li>Email : hannaford71083@gmail.com</li>
+                    <li>Phone : 07841 580 578</li>
+                    <li>Address : 3 Fairfax Gardens, Church Road, Alphington, Exeter, EX2 8SR</li>
+					<li>LinkedIn : www.linkedin.com/profile/view?id=112555716</li>
+				</ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--
+    <div class="footer">
+        <h3>&nbsp</h3>
+    </div>
+    -->
+
+
+</body>
+
+
+</html>

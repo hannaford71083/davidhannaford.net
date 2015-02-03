@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Averia Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Averia Libre Regular'), local('AveriaLibre-Regular'), 
+      url(fonts/rYVgHZZQICWnhjguGsBspOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), 
+      url(fonts/rYVgHZZQICWnhjguGsBspHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), 
+      url(fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2'), 
+      url(fonts//9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), 
+      url(fonts/LeFlHvsZjXu2c3ZRgBq9nFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), 
+      url(fonts/LeFlHvsZjXu2c3ZRgBq9nD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(fonts/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2'), 
+      url(fonts/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway Dots';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway Dots'), local('RalewayDots-Regular'), 
+      url(fonts/lhLgmWCRcyz-QXo8LCzTfOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), 
+      url(fonts/lhLgmWCRcyz-QXo8LCzTfHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Trocchi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Trocchi'), url(fonts/Ba8A3Nf2cGSBRP26ToKWMg.woff2) format('woff2'), 
+      url(fonts/vnG3tpDGh17z5IKwB3RdMg.woff) format('woff');
+}
