@@ -18,6 +18,8 @@ $(document).ready(function () {
         selectContent(prospectiveID);
     });
 
+    generateThumnails();
+
     //Carousel as used in Portfolio
     $("#owl-demo").owlCarousel({
         navigation: true, // Show next and prev buttons
@@ -99,6 +101,24 @@ $(document).ready(function () {
         });
     }
 
+
+    /*
+    Generate all thumnail HTML from a JSON object - include HTML code below in index.html 'Portfolio' section 
+
+    <div class="createThumbnails"></div>
+    */
+    function generateThumbnailElement() {
+        var element;
+        element += "<a class='fancybox-button' rel='fancybox-button' href='images/Zetica_RASC_DC_main.png' title='Screenshot of main dash board'>";
+        element += "<img class='thumbnail' src='images/Zetica_RASC_DC_main.png' alt='' />";
+        element += "</a>"
+        return element;
+    }
+
+    //included before owl slider is instantiated
+    function generateThumnails() {
+        $(".createThumbnails").append(generateThumbnailElement());
+    }
 
 
 });

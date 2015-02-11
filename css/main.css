@@ -149,6 +149,23 @@
         border:1px solid gray;
     }
 
+
+    .Contact ul {
+        list-style-type:none;
+        width: 330px;
+        margin: 50px auto;
+    }
+
+    .Contact li {
+        position:relative;
+    }
+
+    .contact_caption {
+        position: absolute;
+        left: 42px;
+        top: 7px;
+    }
+
     .CV {  text-align:center; }
 
     .fancybox-button{ text-decoration:none; }
