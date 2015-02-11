@@ -1,30 +1,35 @@
 $(document).ready(function () {
 
-    selectContent(returnURLstringAfterHash());
+    CurrentPageView = "Home"; //default value
 
+    //on page load, default to home if nothing after # 
+    (window.location.hash == "") ? selectContent("Home") : selectContent(returnURLstringAfterHash());
+
+    //Nav click event handler
     $(".navBar li").click(function () {
         var id = $(this).attr("id");
         selectContent(id);
     });
 
-
+    //Hash navigation change handler 
     $(window).on('hashchange', function () {
-        console.log("Has has changed to : " + window.location.hash);
-
+        var hash = window.location.hash;        
+        var prospectiveID = hash.substr(1, hash.length); //remove # char from hash string
+        selectContent(prospectiveID);
     });
 
+    //Carousel as used in Portfolio
     $("#owl-demo").owlCarousel({
-
         navigation: true, // Show next and prev buttons
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
         paginationNumbers: true,
-        mouseDrag: false
+        mouseDrag: true
 
     });
 
-
+    //'Lightbox' Picture viewer for Portfolio articles
     $(".fancybox-button").fancybox({
         prevEffect: 'none',
         nextEffect: 'none',
@@ -43,53 +48,48 @@ $(document).ready(function () {
         return arr[1];
     }
 
-
+    //Route page dependent in ID
     function selectContent(id) {
 
-        hideAllContent();
+        // element with id exists
+        if (!$("#" + id).length) { id = CurrentPageID; } 
 
+        SelectNavButton(id);
+        SelectContent(id);
+
+        //Additional actions
+        switch (id) {
+            case "CV":
+                //Browser requests file only when CV tab selected AND only once
+                var CVFileName = "David Hannaford CV.pdf";
+                if ($("#iframe").attr("src") != CVFileName) {
+                    //will not retreive url until 'CV' tab selected
+                    $("#iframe").attr("src", CVFileName);
+                }
+                break;
+            default:
+                //no actions
+        }
+
+        CurrentPageID = id;
+        
+    }
+
+
+    function SelectContent(id) {
+        hideAllContent();
+        window.location.hash = "#" + id;
+        $("." + id).show();
+    }
+
+    // Adds/removes css class for Nav button indents
+    function SelectNavButton(id) {
         $(".navBar li").each(function () {
             $(this).removeClass("selected");
             $(this).addClass("unselected");
         });
-
-        if (!$("#" + id).length) {
-            console.log("Element does NOT exist");
-            id = "Home";
-        }
-        else {
-            console.log("Element does exist");
-
-        }
-
-        $("#"+ id).addClass("selected");
+        $("#" + id).addClass("selected");
         $("#" + id).removeClass("unselected");
-
-        switch (id) {
-            case "":
-            case "Home":
-                window.location.hash = "#Home";
-                $(".Home").show();
-                break;
-            case "CV":
-                window.location.hash = "#CV";
-                $(".CV").show();
-                $("#iframe").attr("src", "David Hannaford CV.pdf"); //will not retreive url until 'CV' tab selected
-                break;
-            case "Portfolio":
-                window.location.hash = "#Portfolio";
-                $(".Portfolio").show();
-                break;
-            case "Contact":
-                window.location.hash = "#Contact";
-                $(".Contact").show();
-                break;
-            default:
-                window.location.hash = "#Home";
-                $(".Home").show();
-
-        }
-
     }
 
 
